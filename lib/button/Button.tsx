@@ -4,5 +4,9 @@ interface IButtonProps {
 }
 
 export const Button: React.FC<IButtonProps> = ({ children, onClick }) => {
-  return <button onClick={onClick}>{children}</button>;
+  return (
+    <button type="button" onClick={onClick}>
+      {children}
+    </button>
+  );
 };
