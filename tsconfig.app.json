@@ -23,7 +23,11 @@
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true,
-    "noUncheckedSideEffectImports": true
+    "noUncheckedSideEffectImports": true,
+
+    "paths": {
+      "@/": ["./lib/index.ts"]
+    }
   },
   "include": ["lib"],
   "exclude": ["node_modules", "dist"]

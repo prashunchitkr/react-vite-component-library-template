@@ -4,8 +4,6 @@ import { defineConfig } from "vite";
 import dts from "vite-plugin-dts";
 import tsconfigPaths from "vite-tsconfig-paths";
 
-const isDev = process.env.NODE_ENV === "development";
-
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [
@@ -16,8 +14,6 @@ export default defineConfig({
 
   build: {
     target: "esnext",
-    minify: isDev,
-    cssMinify: isDev,
     lib: {
       entry: resolve(__dirname, "lib/index.ts"),
       name: "ReactLibraryTemplate",
